@@ -2,7 +2,7 @@ import java.lang.*;
 import java.util.*;
 public class SCLoop2 {
 
-    /*Display Digits of number
+    /*Display Digits of number*/
 
     public static void main(String[] args)
     {
@@ -21,10 +21,10 @@ public class SCLoop2 {
        }
         System.out.println(n);
     }
-*/
 
 
-    /* Count Digits Of a Number
+
+    /* Count Digits Of a Number */
 
     public static void main(String[] args)
     {
@@ -41,7 +41,7 @@ public class SCLoop2 {
        }
         System.out.println(count);
     }
-    */
+    
 
 
     /* armstrong number*/
