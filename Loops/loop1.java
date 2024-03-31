@@ -1,8 +1,6 @@
 import java.util.*;
-
 public class SCLoop4 
 {
-    
     public static void main(String[] args) 
     {
         Scanner sc=new Scanner(System.in);
@@ -26,8 +24,7 @@ public class SCLoop4
     }
     
     
-    
-    /*Program for Fibonacci Series */
+
     public static void main(String[] args) 
     {
         Scanner sc=new Scanner(System.in);
@@ -49,7 +46,7 @@ public class SCLoop4
       
     }   
     
-    /* Program to Print AP Series */
+  
     
     public static void main(String[] args) 
     {
