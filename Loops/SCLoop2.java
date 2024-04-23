@@ -24,7 +24,7 @@ public class SCLoop2 {
 
 
 
-    /* Count Digits Of a Number */
+    /* count digits of a number */
 
     public static void main(String[] args)
     {
