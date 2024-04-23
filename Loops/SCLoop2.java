@@ -2,7 +2,7 @@ import java.lang.*;
 import java.util.*;
 public class SCLoop2 {
 
-    /*Display Digits of number*/
+   /* display number of digits /*
 
     public static void main(String[] args)
     {
