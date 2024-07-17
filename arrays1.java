@@ -87,3 +87,32 @@ public class Array
     }
    
  */
+
+
+ 
+/* Reversing and copying array into another
+    public class array1 {
+        public static void main(String[] args) {
+            int A[] = {3, 9, 7, 8, 12, 6};
+            int B[] = new int[6];
+
+
+            for (int i = 0; i < A.length; i++) {
+                System.out.print(A[i] + ",");
+            }
+            System.out.println("");
+
+
+            for (int i = 0; i < A.length; i++) {
+                B[i] = A[A.length - 1 - i];
+            }
+
+
+            for (int i = 0; i < B.length; i++) {
+                System.out.print(B[i] + ",");
+            }
+            System.out.println("This is the reversed array ");
+        }
+    }
+
+*/
