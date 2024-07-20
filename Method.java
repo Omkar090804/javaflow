@@ -65,3 +65,53 @@ public class Overloading
     
 }
 
+
+    //Method overloading for reversing an integer and an array
+    public class Methods{
+    int reverse(int n)
+    {
+        int rev=0;
+        
+        while(n>0)
+        {
+            rev=rev*10+n%10;
+            n=n/10;
+        }
+        return rev;
+    }
+    
+    
+    int [] reverse(int A[])
+    {
+        int B[]=new int[A.length];
+        
+        for(int i=A.length-1,j=0;i>=0;i--,j++)
+            B[j]=A[i];
+        
+        return B;
+    }
+    
+    public static void main(String[] args) 
+    {
+        //create an obj and call or call directly using static keyword
+    } 
+
+
+        //Validating a string and age
+        public class Methods{
+    static boolean validate(String name){
+        return name.matches("[a-zA-Z\\s]");
+    }
+    static boolean validate(int age)
+    {
+        return age>=3 && age<=15;
+    }
+
+    public static void main(String[] args){
+        boolean validation=validate(17);
+        System.out.println(validation);
+
+    }
+}
+    
+    
