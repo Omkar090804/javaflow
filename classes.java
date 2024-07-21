@@ -92,7 +92,7 @@ class Student {
         System.out.println("Total :" + s.total());
         System.out.println("Average :" + s.average());
 
-        System.out.println("Details:\n " + s);
+        System.out.println("Details:\n " + s);  //tostring method so directly can be called by object
 
     }
 
