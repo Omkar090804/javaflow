@@ -1,36 +1,28 @@
-class Circle {
-    public double radius;
+//Inheritance of circle and cylinder
+class circle{
+    public double  radius;
 
-    public double area() {
-        return Math.PI * radius * radius;
+    public double  area(){
+        return 3.14* radius * radius;
     }
-
-    public double perimeter() {
-        return 2 * Math.PI * radius;
-    }
-
-    public double circumference() {
-        return perimeter();
-    }
+     public double  perimeter() {
+         return 2 * 3.14* radius;
+     }
 }
 
-class Cylinder extends Circle {
+class cylinder extends circle {
     public double height;
 
     public double volume() {
-        return area() * height;
+        return radius * height;
     }
-}
 
-public class Main {
     public static void main(String[] args) {
-        Cylinder c = new Cylinder();
+        cylinder c1=new cylinder();
+        c1.height =5;
+        c1.radius =5;
 
-        c.radius = 7;
-        c.height = 10;
-
-
-        System.out.println("Volume: " + c.volume());
-        System.out.println("Area: " + c.area());
+     System.out.println(c1.area());
+     System.out.println(c1.volume());
     }
 }
