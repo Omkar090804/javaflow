@@ -20,9 +20,8 @@ class Sub extends Super
         System.out.println("Sub meth2"); //here the method meth2 is overriden and is declared in the child class so that child class becomes 
                                         // concrete class
     }
-}
-public class Abstractclasses
-{
+
+
     public static void main(String[] args)
     {
         Super s=new Sub(); //dynamic method dispatch
