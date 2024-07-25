@@ -1,3 +1,4 @@
+//The class whose object is created ,its method will only be called
 class Super
 {
     public void meth1()
