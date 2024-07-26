@@ -1,3 +1,33 @@
+//Interface class 
+interface Test   //all methods area abstract so interface class
+{
+    public void meth1();
+    public  void meth2();
+}
+
+class My implements Test  //in interface class use implements instead of extends
+{
+    public void meth1(){
+        System.out.println("Meth1");
+    }
+    public void meth2(){
+        System.out.println("Meth2");
+    }
+    public void meth3(){
+        System.out.println("Meth3");
+    }
+
+    public static void main(String[] args) 
+    {
+        Test t=new MY(); //dynamic method dispatch
+        t.meth1();
+        t.meth2();
+        
+    }
+}
+
+
+//example 2
 interface Member
 {
     public void callback();
