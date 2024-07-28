@@ -18,7 +18,8 @@ public class Main{
             // Create a connection
             try (Connection con = DriverManager.getConnection(jdbcUrl, username, password); //This method attempts to establish a connection to the database using the provided URL, username, and password.
                  Statement stm = con.createStatement();  //Creates a Statement object for sending SQL statements to the database.
-                 ResultSet rs = stm.executeQuery("SELECT * FROM ibooks")) {
+                 ResultSet rs = stm.executeQuery("SELECT * FROM ibooks"))  //can also use executeUpdate for DML commands
+                { 
 
                 // Process the result set
                 while (rs.next()) { // Moves the cursor to the next row in the result set. Returns false when there are no more rows.
