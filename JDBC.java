@@ -37,3 +37,12 @@ public class Main{
         }
     }
 }
+
+
+//Also we can use prepared statements instead of normal statements 
+//PreparedStatement stm = con.prepareStatement("select*from students where deptno=?"); 
+//then take input using scanner sc=new scanner(system.in)
+//sop("enter the deptno");
+//int dno=sc.nextInt();
+//stm=setInt(1,dno);  1 is the placeholder number;
+//then resultset and rest same
