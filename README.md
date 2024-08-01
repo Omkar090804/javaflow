@@ -18,6 +18,7 @@
                 <li>Variables</li>
                 <li>Operators</li>
                 <li>Control Statements (if, switch, loops)</li>
+                <li>Arrays, Strings</li>
             </ul>
         </li>
         <li><strong>Object-Oriented Programming:</strong>
