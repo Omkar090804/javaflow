@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1>Javaflow</h1>
+    <h1>JavaFlow</h1>
     <p><strong>javadaily</strong></p>
     <p>This is to upload the daily basis codes in Java. Practicing different concepts in Java.</p>
     <p>A long journey ahead and a lot to learn, it's just the start.</p>
