@@ -33,6 +33,9 @@
         <li><strong>Advanced Topics:</strong>
             <ul>
                 <li>Collections Framework</li>
+                <ul>
+                    <li>ArrayList and Iterators</li>li.
+                </ul>
                 <li>Exception Handling</li>
                 <li>JDBC</li>
                  </ul>
