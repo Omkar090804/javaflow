@@ -19,5 +19,10 @@ class Main {
         for (int i=0;i<Al1.size();i++){
             System.out.println(Al1.get(i));
         }
+        ListIterator<Integer>it= Al1.listIterator();      //iterates through complete ArrayList
+        while(it.hasNext()){
+            System.out.println("Iterator vala part is : "+ it.next());
+        }
     }
+
 }
