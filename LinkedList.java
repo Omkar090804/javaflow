@@ -15,9 +15,10 @@ class Main {
         System.out.println(Al1.indexOf(30));
         System.out.println(Al1.isEmpty());
         System.out.println(Al1.clone());
+        Al1.poll();
         System.out.println(Al1);
         System.out.println(Al2);
-        System.out.println(Al1);
+      
 
         for (int i=0;i<Al1.size();i++){
             System.out.println(Al1.get(i));
