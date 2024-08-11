@@ -35,6 +35,7 @@
                 <li>Collections Framework</li>
                 <ul>
                     <li>ArrayList and Iterators</li>
+                    <li>LinkedList</li>
                 </ul>
                 <li>Exception Handling</li>
                 <li>JDBC</li>
