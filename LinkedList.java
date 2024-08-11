@@ -3,8 +3,7 @@ import java.util.*;
 class Main {
     public static void main(String[] args) {
         LinkedList<Integer> Al1 = new LinkedList<>();
-        LinkedList<Integer> Al2 = new LinkedList<>();
-        Collections.addAll(Al2, 10, 20, 30, 40, 50); // Adds elements to Al2
+        LinkedList<Integer> Al2 = new LinkedList<>(List.of(10, 20, 30, 40, 50));
         Al1.add(50);
         Al1.addAll(Al2);
         Al1.set(2,100);
