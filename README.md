@@ -36,6 +36,7 @@
                 <ul>
                     <li>ArrayList and Iterators</li>
                     <li>LinkedList</li>
+                    <li>ArrayDeque</li>
                 </ul>
                 <li>Exception Handling</li>
                 <li>JDBC</li>
