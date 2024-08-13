@@ -1,5 +1,5 @@
 //ArrayDeque is double ended queue that is we can insert and delete elements from front as well as form back
-
+//it can work both as an stack as well as a queue
 import java.util.*;
 
 public class DequeDemo 
@@ -8,7 +8,7 @@ public class DequeDemo
     {
          ArrayDeque<Integer> dq=new ArrayDeque<>();
          
-         dq.offerLast(10);
+         dq.offerLast(10); //used like a queue
          dq.offerLast(20);
          dq.offerLast(30);
          dq.offerLast(40);
