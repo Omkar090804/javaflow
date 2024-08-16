@@ -37,6 +37,7 @@
                     <li>ArrayList and Iterators</li>
                     <li>LinkedList</li>
                     <li>ArrayDeque</li>
+                    <li>PriorityQueue</li>
                 </ul>
                 <li>Exception Handling</li>
                 <li>JDBC</li>
