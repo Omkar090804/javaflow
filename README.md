@@ -39,6 +39,7 @@
                     <li>ArrayDeque</li>
                     <li>PriorityQueue</li>
                     <li>HashSet</li>
+                    <li>TreeSet</li>
                 </ul>
                 <li>Exception Handling</li>
                 <li>JDBC</li>
