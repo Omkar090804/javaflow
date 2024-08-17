@@ -8,7 +8,7 @@
     <h1>JavaFlow</h1>
     <p><strong>javadaily</strong></p>
     <p>This is to upload the daily basis codes in Java. Practicing different concepts in Java.</p>
-    <p>A long journey ahead and a lot to learn, it's just the start.</p>
+    <p>A lot to learn, it's just the start.</p>
 
    <h2>Topics Covered</h2>
     <ul>
