@@ -42,6 +42,7 @@
                     <li>TreeSet</li>
                     <li>TreeMap</li>
                     <li>HashMap</li>
+                    <li>LinkedHashMap</li>
                 </ul>
                 <li>Exception Handling</li>
                 <li>JDBC</li>
