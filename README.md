@@ -43,6 +43,7 @@
                     <li>TreeMap</li>
                     <li>HashMap</li>
                     <li>LinkedHashMap</li>
+                    <li>StringTokenizer</li>
                 </ul>
                 <li>Exception Handling</li>
                 <li>JDBC</li>
