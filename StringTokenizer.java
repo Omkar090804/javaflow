@@ -1,4 +1,4 @@
-package tokenizerdemo;
+//StringTokenizer is we can get tokens from string 
 
 import java.util.*;
 import java.io.*;
@@ -7,25 +7,22 @@ public class TokenizerDemo {
 
     public static void main(String[] args) throws Exception
     {
-        // File path must be valid
-        FileInputStream fis=new FileInputStream("/Users/abdulbari/Documents/Data.txt");
-        byte b[]=new byte[fis.available()];
-        fis.read(b);
         
-        String data=new String(b);
-
-        //String data="name=Vijay address=delhi country=india dept=cse";
+        String data="name=Vijay address=delhi country=india dept=cse";   
+        
+        //here = and space are delimeters which separate each token from one another
     
         
-        StringTokenizer stk=new StringTokenizer(data,",");
+        StringTokenizer stk=new StringTokenizer(data,"= ");
         
         String s;
-        ArrayList<Integer> al=new ArrayList<>();
-        
-        while(stk.hasMoreTokens())
+        ArrayList<Integer> al=new ArrayList<>();           
+
+        //to print the tokens
+        while(stk.hasMoreTokens())              
         {
-            s=stk.nextToken();
-            al.add(Integer.valueOf(s));
+            s=stk.nextToken();               
+            al.add(Integer.valueOf(s));            //storing the tokens in ArrayList and converting int into string
             
         }
         
