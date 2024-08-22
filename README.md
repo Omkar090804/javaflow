@@ -18,6 +18,7 @@
                 <li>Variables</li>
                 <li>Operators</li>
                 <li>Control Statements (if, switch, loops)</li>
+                <li>Static and final </li>
                 <li>Arrays, Strings</li>
             </ul>
         </li>
