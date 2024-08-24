@@ -12,7 +12,7 @@
 
    <h2>Topics Covered</h2>
     <ul>
-        <li><strong>Basics:</strong>
+        <li><strong>Basics:</strong> 
             <ul>
                 <li>Data Types</li>
                 <li>Variables</li>
