@@ -1,5 +1,3 @@
-package exceptiondemo;
-
 import java.util.Scanner;
 
 public class ExceptionDemo 
@@ -20,9 +18,10 @@ public class ExceptionDemo
             c=a/b;
             System.out.println("Division is" +c);
         }
+            
         catch(ArithmeticException e)
         {
-            System.out.println("Denominator should not be 0, try again");
+            System.out.println("Denominator should not be 0, try again"); or Sop(e);
         }
         System.out.println("Bye");
         
