@@ -16,7 +16,7 @@ public class CheckedUnchecked
         }
         catch(LowBalanceException e)
         {
-            System.out.println(e);                       //in toString method we can direct print e that is sop(e) no need for sop(e.toString)
+            System.out.println(e);                      //in toString method we can direct print e that is sop(e) no need for sop(e.toString)
         }
     }
     
