@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>JavaFlow</h1>
-    <p><strong>javadaily</strong></p>
+    <p><strong>JavaDaily</strong></p>
     <p>This is to upload the daily basis codes in Java. Practicing different concepts in Java.</p>
     <p>A lot to learn, it's just the start.</p>
 
@@ -48,7 +48,9 @@
                 </ul>
                 <li>Exception Handling</li>
                 <li>JDBC</li>
-                 </ul>
+                <li>AWT</li>
+                
+   </ul>
         </li>
     </ul>
  
