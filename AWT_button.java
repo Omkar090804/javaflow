@@ -23,7 +23,7 @@ class MyFrame extends Frame implements ActionListener                       //ex
         
     }
 
-    public void actionPerformed(ActionEvent e) 
+    public void actionPerformed(ActionEvent e)                           // overridded method because of actionlistener
     {
         count++;
         l.setText("  "+count);
