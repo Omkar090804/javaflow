@@ -75,6 +75,39 @@ class Patterns {
 
 
 
+1 
+0 1 
+1 0 1 
+0 1 0 1 
+1 0 1 0 1 
+
+
+import java.util.Scanner;
+
+class Patterns {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number (n): ");
+        int n = scanner.nextInt();
+        int start;
+
+        for (int i = 1; i < n; i++) {
+            if (i % 2 == 0) {              //even row staring from 0 
+                start = 0;
+            } else {
+                start = 1;                 //odd row starting from 1
+            }
+
+            for (int j = 1; j <= i; j++) {
+                System.out.print(start + " ");
+                start = 1 - start;              //change 0 to 1 and vice versa
+            }
+
+            System.out.println();
+        }
+    }
+}
 
 
 
