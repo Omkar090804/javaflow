@@ -20,6 +20,7 @@
                 <li>Control Statements (if, switch, loops)</li>
                 <li>Static and final </li>
                 <li>Arrays, Strings</li>
+                <li>Recursion</li>
                 <li>Patterns</li>
             </ul>
         </li>
