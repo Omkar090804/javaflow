@@ -37,3 +37,51 @@ public class SortUsingRecursion {
             System.out.println("After sorting: " + v);
         }
     }
+
+
+
+//DeleteMiddleElement
+
+import java.util.ArrayList;
+
+public class DeleteMiddleElement {
+
+    public static void delete(ArrayList<Integer> v) {
+        if (v.size()==0) {
+            return;
+        }
+
+        int mid = v.size() / 2;
+
+        deleteMiddle(v, mid, 0);
+    }
+    public static void deleteMiddle(ArrayList<Integer> v, int mid, int currentIndex) {
+
+        if (currentIndex == mid) {
+            v.remove(currentIndex);
+            return;
+        }
+
+        int temp = v.remove(v.size() - 1);
+
+        deleteMiddle(v, mid, currentIndex + 1);
+
+        v.add(temp);
+    }
+
+
+    public static void main(String[] args) {
+        ArrayList<Integer> v = new ArrayList<>();
+        v.add(5);
+        v.add(1);
+        v.add(3);
+        v.add(2);
+        v.add(4);
+
+        System.out.println("Before removing middle element: " + v);
+        delete(v); // Remove the middle element using recursion
+        System.out.println("After removing middle element: " + v);
+    }
+}
+
+
