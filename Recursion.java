@@ -3,7 +3,7 @@
 import java.util.ArrayList;
 
 public class SortUsingRecursion {
-    public static void sort(ArrayList<Integer> v) {
+    public static void sort(ArrayList<Integer> v) { 
         if (v.size() <= 1) {
             return;
         }
