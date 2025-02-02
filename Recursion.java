@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class SortUsingRecursion {
     public static void sort(ArrayList<Integer> v) { 
         if (v.size() <= 1) {
-            return;
+            return; 
         }
         int temp = v.remove(v.size() - 1);
         sort(v);
