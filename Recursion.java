@@ -84,4 +84,43 @@ public class DeleteMiddleElement {
     }
 }
 
+//Reversing an array using recursion
 
+import java.util.ArrayList;
+
+public class ReverseUsingRecursion {
+
+    public static void reverse(ArrayList<Integer> v) {
+        if (v.size() <= 1) {
+            return;
+        }
+
+        int temp = v.remove(v.size() - 1);
+        reverse(v);
+        insertAtBottom(v, temp);
+    }
+
+    public static void insertAtBottom(ArrayList<Integer> v, int temp) {
+        if (v.size() == 0) {
+            v.add(temp);
+            return;
+        }
+
+        int val = v.remove(v.size() - 1);
+        insertAtBottom(v, temp);
+        v.add(val); 
+    }
+
+    public static void main(String[] args) {
+        ArrayList<Integer> v = new ArrayList<>();
+        v.add(5);
+        v.add(1);
+        v.add(3);
+        v.add(2);
+        v.add(4);
+
+        System.out.println("Before reversing: " + v);
+        reverse(v);
+        System.out.println("After reversing: " + v);
+    }
+}
