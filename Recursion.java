@@ -50,14 +50,14 @@ public class DeleteMiddleElement {
         if (v.size()==0) {
             return;
         }
-
+                                                            //here we didnt remove int temp = v.remove(v.size() - 1); as then mid element will chnage its position 
         int mid = v.size() / 2;
 
         deleteMiddle(v, mid, 0);
     }
     public static void deleteMiddle(ArrayList<Integer> v, int mid, int currentIndex) {
 
-        if (currentIndex == mid) {
+        if (currentIndex == mid) {                          
             v.remove(currentIndex);
             return;
         }
