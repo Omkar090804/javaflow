@@ -1,9 +1,9 @@
-//Use choice tree(recursion)
+ //Use choice tree(recursion)
 
 class Knapsack {
     public int knapsack(int wt[], int val[], int w, int n) {
 
-        if (n == 0 || w == 0) {                      //Base
+        if (n == 0 || w == 0) {                      //Base condn
             return 0;
         }
 
