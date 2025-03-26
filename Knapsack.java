@@ -72,7 +72,7 @@ public class Knapsack{
 }
 
 
-// Top-Down                                                                        //The DP table t[n+1][w+1] is structured as:
+// Top-Down                                                                        //The DP table t[n+1][w+1] is structured as :
 
                                                                                    //  Rows (i) = Items (0 to n) 
 
