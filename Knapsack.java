@@ -72,7 +72,44 @@ public class Knapsack{
 }
 
 
+// Top-Down                                                                        //The DP table t[n+1][w+1] is structured as:
 
+                                                                                   //  Rows (i) = Items (0 to n) 
+
+                                                                                   //  Columns (j) = Weights (0 to w)
+
+ public class Knapsack {
+    public static int knapSack(int w, int wt[], int val[], int n) {
+        int[][] t = new int[n+1][w+1];
+        
+        // Initialize matrix
+        for(int i = 0; i < w+1; i++) t[0][i] = 0;
+        for(int j = 0; j < n+1; j++) t[j][0] = 0;
+        
+        // Choice Diagram to code
+        for(int i = 1; i < n+1; i++) {
+            for(int j = 1; j < w+1; j++) {
+             
+                if(wt[i-1] <= j) {
+                    t[i][j] = Math.max(val[i-1] + t[i-1][j-wt[i-1]], t[i-1][j]);
+                }
+              
+                else {
+                    t[i][j] = t[i-1][j];
+                }
+            }
+        }
+        return t[n][w];
+    }
+
+    public static void main(String[] args) {
+        int val[] = new int[] {60, 100, 120};
+        int wt[] = new int[] {10, 20, 30};
+        int W = 50;
+        int n = val.length;
+        System.out.println(knapSack(W, wt, val, n));
+    }
+}
 
 
 
