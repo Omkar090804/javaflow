@@ -8,7 +8,7 @@ public class SubsetSum {
         
         // Choice Diagram to code
         for(int i = 1; i < n+1; i++) {
-            for(int j = 1; j < sum+1; j++) {
+            for(int j = 1; j < sum+1; j++) {  
                 if(arr[i-1] <= j) {
                     t[i][j] = t[i-1][j] || t[i-1][j-arr[i-1]];
                 }
