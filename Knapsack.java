@@ -3,7 +3,7 @@
 class Knapsack {
     public int knapsack(int wt[], int val[], int w, int n) {
 
-        if (n == 0 || w == 0) {                      //Base condn
+        if (n == 0 || w == 0) {                      //Base condn 
             return 0;
         }
 
