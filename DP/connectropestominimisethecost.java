@@ -1,7 +1,7 @@
 class Solution {
     public static int minCost(int[] arr) {
-        if(arr.length<2){
-            return 0;
+        if(arr.length<2){                                           //base condn
+            return 0; 
         }
       PriorityQueue<Integer> pq = new PriorityQueue<>();              //min heap
         
@@ -15,7 +15,7 @@ class Solution {
             int second=pq.poll();
             int cost=first+second;
             totalcost=totalcost+cost;
-            pq.add(cost);
+            pq.add(cost);                                
             
         }
         return totalcost;
