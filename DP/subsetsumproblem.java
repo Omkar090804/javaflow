@@ -3,6 +3,8 @@ public class SubsetSum {
         boolean[][] t = new boolean[n+1][sum+1];
         
         // Initialize matrix
+
+        i is arr[i] size and j is the sum
         for(int i = 0; i < sum+1; i++) t[0][i] = false;  // empty array can't make any sum (except 0)
         for(int j = 0; j < n+1; j++) t[j][0] = true;     // empty subset makes sum 0
         
