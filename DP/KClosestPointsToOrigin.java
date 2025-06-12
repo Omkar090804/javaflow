@@ -2,7 +2,7 @@
 
 class Solution {
     public int[][] kClosest(int[][] points, int k) {
-        PriorityQueue<int[]> pq = new PriorityQueue<>(
+        PriorityQueue<int[]> pq = new PriorityQueue<>(           //here int[] because pair is there like 2d (1,2)...if single element then priorityqueue(INTEGER)=...
             (a, b) -> (b[0] * b[0] + b[1] * b[1]) - (a[0] * a[0] + a[1] * a[1])        //generally java follows min hep(min number at top) as default but here we have placed b-a thats why max heap
         );                                                                             //(a, b) -> (b[0]*b[0] + b[1]*b[1]) - (a[0]*a[0] + a[1]*a[1]) 
                                                                                        //Computes squared distances for two points (a and b).
