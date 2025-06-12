@@ -9,7 +9,7 @@ class Solution {
         
                                                            //a = [3, 4] → Distance² = 3² + 4² = 9 + 16 = 25
                                                            //b = [1, 2] → Distance² = 1² + 2² = 1 + 4 = 5   
-                                                           //(b[0] * b[0] + b[1] * b[1]) - (a[0] * a[0] + a[1] * a[1]) = 5-25 =-20
+                                                           //(b[0] * b[0] + b[1] * b[1]) - (a[0] * a[0] + a[1] * a[1]) = 5-25 =-20 here -20 means b is closer to origin than a...here the formula is just to compare who is closer to origin a or b there is no distance calculation
 
 
                                                                                         //// (1,2)=1^2+2^2=5
