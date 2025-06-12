@@ -6,7 +6,13 @@ class Solution {
             (a, b) -> (b[0] * b[0] + b[1] * b[1]) - (a[0] * a[0] + a[1] * a[1])        //generally java follows min hep(min number at top) as default but here we have placed b-a thats why max heap
         );                                                                             //(a, b) -> (b[0]*b[0] + b[1]*b[1]) - (a[0]*a[0] + a[1]*a[1]) 
                                                                                        //Computes squared distances for two points (a and b).
-                                                                                       //// (1,2)=1^2+2^2=5
+        
+                                                           //a = [3, 4] → Distance² = 3² + 4² = 9 + 16 = 25
+                                                           //b = [1, 2] → Distance² = 1² + 2² = 1 + 4 = 5   
+                                                           //(b[0] * b[0] + b[1] * b[1]) - (a[0] * a[0] + a[1] * a[1]) = 5-25 =-20
+
+
+                                                                                        //// (1,2)=1^2+2^2=5
 
                                                                                        //Subtracts their values:
 
