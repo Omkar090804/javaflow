@@ -1,12 +1,9 @@
 class Solution {
     public static int minCost(int[] arr) {
-        if(arr.length<2){                                           //base condn
-            return 0; 
-        }
-      PriorityQueue<Integer> pq = new PriorityQueue<>();              //min heap
+      PriorityQueue<Integer> pq = new PriorityQueue<>();            
         
-        for(int i=0;i<arr.length;i++){
-            pq.add(arr[i]);
+        for(int i=0;i<arr.length;i++){                  //here we put all ropes together in pq but in k colsest points we put each point one by one 
+            pq.offer(arr[i]);
         }
         int totalcost=0;
         
