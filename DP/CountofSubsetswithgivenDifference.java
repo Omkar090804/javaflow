@@ -1,10 +1,10 @@
-
+//example [1, 2, 3, 4] here d=2 so subsets can be [2,4][1,2,3] so output = 2  
 class Solution {
     public int countPartitions(int[] arr, int d) {
         int n = arr.length;
         int totalSum = 0;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {                                                     
             totalSum += arr[i];
         }
 
