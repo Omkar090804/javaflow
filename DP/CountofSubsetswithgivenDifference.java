@@ -1,4 +1,4 @@
-//example [1, 2, 3, 4] here d=2 so subsets can be [2,4][1,2,3] so output = 2  
+//example [1, 1, 2, 3] here d=1 so subsets can be [1,3][1,2] and [1,3][1,2](this 1 is 1 at second index) [1,1,2][3] so output = 3 
 class Solution {
     public int countPartitions(int[] arr, int d) {
         int n = arr.length;
