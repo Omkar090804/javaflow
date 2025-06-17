@@ -30,11 +30,11 @@ class Solution {
         
         for(int i=1;i<n+1;i++){
             for(int j=1;j<m+1;j++){
-                if(s1.charAt(i-1)==s2.charAt(j-1)){
+                if(s1.charAt(i-1)==s2.charAt(j-1)){                 //if both's strings last ele is common then we count it which is if condn
                     t[i][j]=1+ t[i-1][j-1];
                 }
                 else{
-                  t[i][j]=Math.max(t[i][j-1] , t[i-1][j]);
+                  t[i][j]=Math.max(t[i][j-1] , t[i-1][j]);          //else condn is if last ele is not common then we remove the last ele of wither s1 or s2 and again compare with others
                 
             }
         }
