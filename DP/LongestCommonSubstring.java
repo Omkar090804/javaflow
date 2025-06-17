@@ -1,4 +1,12 @@
+/*
+You are given two strings s1 and s2. Your task is to find the length of the longest common substring among the given strings.
 
+Examples:
+
+Input: s1 = "ABCDGH", s2 = "ACDGHR"
+Output: 4
+Explanation: The longest common substring is "CDGH" with a length of 4.
+*/
 
 class Solution {
     public int longestCommonSubstr(String s1, String s2) {
