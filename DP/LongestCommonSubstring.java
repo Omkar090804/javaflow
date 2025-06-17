@@ -12,7 +12,7 @@ class Solution {
     public int longestCommonSubstr(String s1, String s2) {
        int n = s1.length();
        int m=  s2.length();
-        int maxLen = 0;
+        int maxLen = 0;                               //maxlen to keep track of longest substring as it can be in middle also and not necessarily at end so keeping track using maxlen
 
         int t[][]= new int[n+1][m+1];
         
