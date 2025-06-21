@@ -1,4 +1,12 @@
+/*
+Given two strings s1 and s2. The task is to remove or insert the minimum number of characters from/in s1 to transform it into s2. It could be possible that the same character needs to be removed from one point of s1 and inserted into another point.
 
+Examples :
+
+Input: s1 = "heap", s2 = "pea"
+Output: 3
+Explanation: 'p' and 'h' deleted from heap. Then, 'p' is inserted at the beginning.
+    */
 
 class Solution {
     public int minOperations(String s1, String s2) {
