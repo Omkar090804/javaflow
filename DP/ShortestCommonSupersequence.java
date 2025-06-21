@@ -1,3 +1,17 @@
+/*Given two strings s1 and s2, find the length of the smallest string which has both s1 and s2 as its sub-sequences.
+Note: s1 and s2 can have both uppercase and lowercase English letters.
+
+Examples:
+
+Input: s1 = "geek", s2 = "eke"
+Output: 5
+Explanation: String "geeke" has both string "geek" and "eke" as subsequences.
+    */
+
+
+
+
+
 class Solution {
     public static int shortestCommonSupersequence(String s1, String s2) {
         int n = s1.length();
