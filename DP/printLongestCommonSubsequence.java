@@ -1,4 +1,6 @@
 /*
+//can also see for printing all the subsequences as here it is just printing one and can also see for printing lexographically
+
 You are given two strings ‘s1’ and ‘s2’.
 Return the longest common subsequence of these strings.
 If there’s no such string, return an empty string. If there are multiple possible answers, return any such string.
