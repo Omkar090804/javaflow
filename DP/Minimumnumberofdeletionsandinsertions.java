@@ -6,7 +6,7 @@ Examples :
 Input: s1 = "heap", s2 = "pea"
 Output: 3
 Explanation: 'p' and 'h' deleted from heap. Then, 'p' is inserted at the beginning.
-    */
+*/
 
 class Solution {
     public int minOperations(String s1, String s2) {
