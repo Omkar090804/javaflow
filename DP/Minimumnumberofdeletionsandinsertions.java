@@ -27,10 +27,10 @@ class Solution {
             }
         }
         
-        int lcs=t[n][m];
-        int deletions=n-lcs;
-        int insertions=m-lcs;
+        int lcs=t[n][m];                                 //here lcs is ea
+        int deletions=n-lcs;                            //so heap - ea (4-2) so total deletions is 2
+        int insertions=m-lcs;                           // and pea - ea (3-2) so total insertions is 1
        
-        return  deletions + insertions;
+        return  deletions + insertions;                  // output = 3 ;
     }
 }
