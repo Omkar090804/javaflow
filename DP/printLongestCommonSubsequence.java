@@ -2,10 +2,9 @@
 You are given two strings ‘s1’ and ‘s2’.
 Return the longest common subsequence of these strings.
 If there’s no such string, return an empty string. If there are multiple possible answers, return any such string.
+
 Input: ‘s1’  = “abcab”, ‘s2’ = “cbab”
-
 Output: “bab”
-
 Explanation:
 “bab” is one valid longest subsequence present in both strings ‘s1’ , ‘s2’.
 */
