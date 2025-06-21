@@ -29,7 +29,7 @@ class Solution {
 
         // Reconstruct the LCS string
         int i = n, j = m;
-        StringBuilder lcs = new StringBuilder();
+        StringBuilder lcs = new StringBuilder();      // stringbuilder just for better efficiency
 
         while (i > 0 && j > 0) {
             if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
