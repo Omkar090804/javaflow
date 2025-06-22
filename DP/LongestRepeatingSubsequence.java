@@ -17,7 +17,7 @@ class Solution {
         
         for(int i=1;i<n+1;i++){
              for(int j=1;j<n+1;j++){
-                 if( s.charAt(i-1)==s.charAt(j-1) && i!=j){
+                 if( s.charAt(i-1)==s.charAt(j-1) && i!=j){       //printing lcs just that also priting that elements in lcs which are common in both strings but are at different indexs that is why we have put i!=j rest complete code is same
                      t[i][j]= 1 + t[i-1][j-1];
                  }
                  else{
