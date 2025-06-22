@@ -1,3 +1,4 @@
+//this code is same for insert minimum number of characters...no change
 /*
 Given a string s, write a program to delete the minimum number of characters from the string so that the resultant string is a palindrome, while maintaining the order of characters.
 
