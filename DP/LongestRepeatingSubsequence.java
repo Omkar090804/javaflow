@@ -1,4 +1,13 @@
-// User function Template for Java
+/*
+Given string str, find the length of the longest repeating subsequence such that it can be found twice in the given string.
+
+The two identified subsequences A and B can use the same ith character from string s if and only if that ith character has different indices in A and B. For example, A = "xax" and B = "xax" then the index of the first "x" must be different in the original string for A and B.
+
+Examples :
+
+Input: s = "axxzxy"
+Output: 2
+*/
 
 class Solution {
     public int LongestRepeatingSubsequence(String s) {
