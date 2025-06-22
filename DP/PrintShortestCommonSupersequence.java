@@ -1,3 +1,11 @@
+/*
+Given two strings str1 and str2, return the shortest string that has both str1 and str2 as subsequences. If there are multiple valid strings, return any of them.
+
+Example 1:
+Input: str1 = "abac", str2 = "cab"
+Output: "cabac"
+*/
+
 class Solution {
     public String shortestCommonSupersequence(String str1, String str2) {
         int n=str1.length();
@@ -5,11 +13,11 @@ class Solution {
 
         int t[][]=new int[n+1][m+1];
         
-        for(int i=1;i<n+1;i++){
+        for(int i=1;i<n+1;i++){                                                      
             for(int j=1;j<m+1;j++){
             if(str1.charAt(i - 1) == str2.charAt(j - 1)){
                 t[i][j]= 1 + t[i-1][j-1];
-            }
+            }g
             else{
                 t[i][j] = Math.max(t[i][j-1],t[i-1][j]);
             }
