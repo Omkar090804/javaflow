@@ -45,7 +45,7 @@ class Solution {
         int minCuts = Integer.MAX_VALUE;
 
         for (int k = i; k < j; k++) {       //we can do same as matrix chain multiplication but for making it more optimized and to make all test cases run we do like this 
-            int left, right;
+            int left, right;                //we check here if value of left part of string is stored in table if yes use it if no then do like we do in mcm so overall optimizing the code
 
             if (t[i][k] != -1)
                 left = t[i][k];
@@ -57,7 +57,7 @@ class Solution {
             else
                 right = solve(s, k + 1, j);
 
-            int temp = left + right + 1;
+            int temp = left + right + 1;               //here 1 is added because we already make one partition to
             minCuts = Math.min(minCuts, temp);
         }
 
