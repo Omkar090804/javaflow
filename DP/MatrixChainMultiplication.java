@@ -22,3 +22,51 @@ public class MatrixChainMultiplication {
         return ans;
     }
     }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//Main Code
+
+class Solution {
+    static int[][] dp;
+
+    static int matrixMultiplication(int arr[]) {
+        int n = arr.length;
+        
+        dp = new int[n+1][n+1];
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                dp[i][j] = -1;
+            }
+        }
+
+        return solve(arr, 1, n - 1);
+    }
+
+    static int solve(int[] arr, int i, int j) {
+        if (i >= j){
+            return 0;
+        } 
+
+        if (dp[i][j] != -1) {
+            return dp[i][j];
+        }
+
+        int minCost = Integer.MAX_VALUE;
+
+        for (int k = i; k < j; k++) {
+            int cost = solve(arr, i, k) + solve(arr, k + 1, j) + arr[i - 1] * arr[k] * arr[j];
+
+            if (cost < minCost) {
+                minCost = cost;
+            }
+        }
+
+        dp[i][j] = minCost;
+        return minCost;
+    }
+}
+
