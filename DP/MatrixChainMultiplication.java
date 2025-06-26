@@ -6,16 +6,21 @@
 5) printting minimum cost
 */
 
+
+ /*
+example : 40 20 30 10 30
+    i = 20 , k = 20 , j = 30 
+    after solving solve(arr, i, k) + solve(arr, k + 1, j) answer will be 
 public class MatrixChainMultiplication {
 
     public static int solve(int[] arr, int i, int j) {
-        if (i >= j)                                            
+        if (i >= j)                                             //base condn
             return 0;
 
         int ans = Integer.MAX_VALUE;
 
-        for (int k = i; k <= j - 1; k++) {
-            int tempAns = solve(arr, i, k) + solve(arr, k + 1, j) + arr[i - 1] * arr[k] * arr[j];
+        for (int k = i; k <= j - 1; k++) {   //k loop this is always same...this is too break the array into two sections one from i to k and other from k+1 to j and then multiply those values with each other to find the total cost
+            int tempAns = solve(arr, i, k) + solve(arr, k + 1, j) + arr[i - 1] * arr[k] * arr[j];  // this arr[i - 1] * arr[k] * arr[j] is the extra cost which comes while calculating both parts of array  solve(arr, i, k) part and olve(arr, k + 1, j this part 
             ans = Math.min(ans, tempAns);
         }
 
