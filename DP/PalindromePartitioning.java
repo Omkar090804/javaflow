@@ -24,7 +24,7 @@ class Solution {
         return solve(s, 0, n - 1);
     }
 
-    static boolean isPalindrome(String s, int i, int j) {
+    static boolean isPalindrome(String s, int i, int j) {                 //checking if straing is palindrome 
         while (i <= j) {
             if (s.charAt(i) != s.charAt(j))
                 return false;
