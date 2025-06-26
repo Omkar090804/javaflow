@@ -5,12 +5,7 @@
 4) find temp ans which we need to calculate for all values of k and then out of them we take the minimum as answer as we need min cost
 5) printting minimum cost
 */
-
-
- /*
-example : 40 20 30 10 30
-    i = 20 , k = 20 , j = 30 
-    after solving solve(arr, i, k) + solve(arr, k + 1, j) answer will be 
+ 
 public class MatrixChainMultiplication {
 
     public static int solve(int[] arr, int i, int j) {
