@@ -1,8 +1,6 @@
 /*
 Given a string s, a partitioning of the string is a palindrome partitioning if every sub-string of the partition is a palindrome. Determine the fewest cuts needed for palindrome partitioning of the given string.
-
 Examples:
-
 Input: s = "geek" 
 Output: 2 
 Explanation: We need to make minimum 2 cuts, i.e., "g | ee | k".
