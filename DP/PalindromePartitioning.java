@@ -57,7 +57,7 @@ class Solution {
             else
                 right = solve(s, k + 1, j);
 
-            int temp = left + right + 1;               //here 1 is added because we already make one partition to
+            int temp = left + right + 1;               //here 1 is added because we already make one partition to make i to k and then k+1 to j so 1 is added
             minCuts = Math.min(minCuts, temp);
         }
 
