@@ -44,7 +44,7 @@ class Solution {
 
         int minCuts = Integer.MAX_VALUE;
 
-        for (int k = i; k < j; k++) {
+        for (int k = i; k < j; k++) {       //we can do same as matrix chain multiplication but for making it more optimized and to make all test cases run we do like this 
             int left, right;
 
             if (t[i][k] != -1)
