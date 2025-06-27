@@ -36,7 +36,7 @@ import java.util.HashMap;
 
 class Solution {
     // Memoization map to store results of subproblems
-    static HashMap<String, Boolean> memo = new HashMap<>();            
+    static HashMap<String, Boolean> memo = new HashMap<>();             //string and boolens together as string is a and b and boolan is for true and false to check scrambled or not
 
     static boolean isScramble(String S1, String S2) {
         // Create a unique key for the current pair of strings
