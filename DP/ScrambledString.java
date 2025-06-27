@@ -36,7 +36,7 @@ import java.util.HashMap;
 
 class Solution {
     // Memoization map to store results of subproblems
-    static HashMap<String, Boolean> memo = new HashMap<>();
+    static HashMap<String, Boolean> memo = new HashMap<>();            
 
     static boolean isScramble(String S1, String S2) {
         // Create a unique key for the current pair of strings
@@ -60,12 +60,12 @@ class Solution {
         }
 
         int n = S1.length();
-        boolean flag = false;
+        boolean flag = false;       //considering a and b are not scrambled 
 
         // Try all possible split positions
         for (int i = 1; i <= n - 1; i++) {
             // Case 1: Swap the two parts
-            boolean cond1 = isScramble(S1.substring(0, i), S2.substring(n - i, n)) &&
+            boolean cond1 = isScramble(S1.substring(0, i), S2.substring(n - i, n)) &&  //these conditions are like mcm where we break string k time simi here instead of k we have used i 
                             isScramble(S1.substring(i, n), S2.substring(0, n - i));
 
             // Case 2: Don't swap the two parts
