@@ -1,3 +1,5 @@
+//Given a binary tree in which each node element contains a number. Find the maximum possible path sum from one special node to another special node.
+
 class Solution {
     int res;
 
@@ -29,7 +31,7 @@ class Solution {
         res = Integer.MIN_VALUE;
         int val = solve(root);
 
-        // If no valid leaf-to-leaf path was found (e.g., skewed tree)
+        // If no valid leaf-to-leaf path was found (e.g., skewed tree) skewed is where all nodes are on one side 
         if (root.left == null || root.right == null) {
             return Math.max(res, val);
         }
