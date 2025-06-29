@@ -72,6 +72,7 @@ class Solution {
                         low = mid + 1;
                     }
                 }
+                
                 // Store result for (eggs, floors)
                 dp[eggs][floors] = minAttempts;
             }
