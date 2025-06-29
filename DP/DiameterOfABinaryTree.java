@@ -18,7 +18,7 @@ class Solution {
     public int solve(Node root) {
         if (root == null) return 0;     //base condition
 
-        int leftHeight = solve(root.left);
+        int leftHeight = solve(root.left);               //hypotheis always same
         int rightHeight = solve(root.right);
 
         int tempHeight = 1 + Math.max(leftHeight, rightHeight);   
