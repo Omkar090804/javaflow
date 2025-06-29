@@ -10,7 +10,7 @@ class Solution {
             return 0;
         }
         
-        int left = Math.max(0, solve(root.left));
+        int left = Math.max(0, solve(root.left));               //this way as we dont want negative numbers here 
         int right = Math.max(0, solve(root.right));
         
     
