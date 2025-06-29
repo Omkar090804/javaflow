@@ -11,12 +11,12 @@ class Solution {
         int left = solve(root.left);
         int right = solve(root.right);
 
-        if (root.left != null && root.right != null) {
+        if (root.left != null && root.right != null) {                //if node has left and right
             res = Math.max(res, left + right + root.data);
             return root.data + Math.max(left, right);
         }
 
-        if (root.left == null && root.right == null) {
+        if (root.left == null && root.right == null) {          //if no left right
             return root.data;
         }
 
