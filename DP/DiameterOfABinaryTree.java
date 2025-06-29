@@ -4,6 +4,10 @@ Given a binary tree, the diameter (also known as the width) is defined as the nu
 Examples:
 Input: root[] = [1, 2, 3]
 
+      1  
+   /     \ 
+2           3
+
 Output: 2
 Explanation: The longest path has 2 edges (node 2 -> node 1 -> node 3).
 */
