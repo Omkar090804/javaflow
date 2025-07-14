@@ -24,3 +24,32 @@ class Solution {
         }
     }
 }
+
+
+//Left rotate by k 
+
+class Solution {
+    // Function to rotate an array by d elements in counter-clockwise direction.
+    static void rotateArr(int arr[], int d) {
+        int n=arr.length;
+        
+        d = d % n; // prevent d from exceeding array length
+        if (d == 0 || n == 0) return; // no need to rotate
+
+       
+        rotate(arr,0,d-1);
+        rotate(arr,d,n-1);
+        rotate(arr,0,n-1);
+    }
+    
+static void rotate(int arr[],int start,int end){
+    while(start < end){
+       int temp = arr[start];
+       arr[start]=arr[end];
+       arr[end]=temp;
+       start++;
+       end--;
+    }
+ }
+    
+}
