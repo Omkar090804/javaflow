@@ -23,3 +23,22 @@ public class Main {
 
 
 //or 
+
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
+        int deleteIndex = 2; // Remove element at index 2 (value 3)
+        list.remove(deleteIndex);
+
+        System.out.println("After deletion: " + list);
+    }
+}
+
